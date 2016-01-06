@@ -95,25 +95,37 @@ h1, h2, h3, h4, h5, h6, nav a {
 /* Header */
 .header-container {
 	background: #38a6e8;
+	border-bottom: 2px solid #9acdec;
 }
 header {
 	max-width: 1020px;
 	margin: 0 auto;
 	padding: 0;
 }
-nav.main ul {
+header h1 {
+	margin: 10px 0;
+	float: left;
+}
+nav.main  {
+    float: right;
+    min-width: 700px;
+    margin-top: 10px;
+}
+nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-align: right;
 }
 nav.main a {
-    display: block;
-    margin-bottom: 10px;
     padding: 15px 0;
     text-decoration: none;
     font-weight: 500;
     color: white;
     text-transform: uppercase;
+    margin: 0 1.7%;
+    padding: 10px 2%;
+    display: inline;
 }
 nav.main a:hover,
 nav.main a:visited {
@@ -122,17 +134,29 @@ nav.main a:visited {
 nav.main a:hover {
     text-decoration: underline;
 }
-nav.main  {
-    float: right;
-    min-width: 700px;
+nav.main li:first-child a {
+    margin-left: 0;
+}
+nav.main li:last-child a {
+    margin-right: 0;
+    background-color: #f65151;
+    border-radius: 5px;
+    border: 2px solid #f43d3d;
+    padding: 7px 22px;
 }
 nav.social {
 	float: right;
 	width: 200px;
 	padding: 0;
+	margin-top: 25px;
 }
-
-
+nav.social a  {
+	margin: 0 5px;
+	display: inline;
+}
+nav.social li:last-child a {
+	margin-right: 0;
+}
 
 
 
@@ -152,25 +176,7 @@ nav.social {
     INTERMEDIATE: Menu
    ==================== */
 	
-    nav.main a {
-        float: left;
-        margin: 0 1.7%;
-        padding: 10px 2%;
-    }
-
-    nav.main li:first-child a {
-        margin-left: 0;
-    }
-
-    nav.main li:last-child a {
-        margin-right: 0;
-        background-color: #f65151;
-        border-radius: 5px;
-    }
-    nav.social a  {
-    	float: right;
-    	margin: 0 10px;
-    }
+    
 
 /* ========================
     INTERMEDIATE: IE Fixes
