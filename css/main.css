@@ -5,7 +5,6 @@ Author: Lucian Tucker
 ******************************************************************/
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -49,7 +48,7 @@ textarea {
 /* ==============
     MOBILE: Main
    ============== */
-.wrapper {
+.content {
     width: 90%;
     margin: 0 5%;
 }
@@ -84,15 +83,41 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Typography */
+/*    TYPOGRAPHY
+/*--------------------------------------*/
+
 body {
     font: 16px/26px Lora, Georgia, Times, Times New Roman, serif;
+    color: #464646;
 }
-h1, h2, h3, h4, h5, h6, nav a {
+h1, h2, h3, h4, h5, h6, nav a, .btn {
 	font-family: 'Fira Sans', sans-serif;
+	color: #013e68;
+}
+h1, .home h2 {
+	font-size: 2.25em;
+	font-weight: 700;
+	margin-top: 0;
 }
 
-/* Header */
+/* Links */
+a {
+	text-decoration: none;
+}
+a.btn {
+	background-color: #38a6e8;
+	border-radius: 5px;
+	border: 2px solid #359cd9;
+	padding: 7px 22px;
+	margin-top: 15px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+}
+
+/*    MAIN CONTENT
+/*--------------------------------------*/
 .header-container {
 	background: #38a6e8;
 	border-bottom: 2px solid #9acdec;
@@ -158,8 +183,30 @@ nav.social li:last-child a {
 	margin-right: 0;
 }
 
-
-
+/* Homepage */
+.home section.about {
+	width: 100%;
+	background: url('../img/stock-photo-city.jpg') no-repeat left top;
+	background-size: cover;
+	float: left;
+	clear: both;
+	padding: 100px 0;
+}
+.home section.about article.content {
+	padding: 5%;
+	width: 80%;
+	background: white;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+}
+.home section.about article.content p {
+	font-size: 18px;
+	line-height: 24px;
+}
+.home section.about article.content img {
+	margin-left: 40px;
+}
 
 
 
@@ -193,27 +240,12 @@ nav.social li:last-child a {
 
 @media only screen and (min-width: 768px) {
 
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
 
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+    
 }
 
 @media only screen and (min-width: 1140px) {
@@ -222,10 +254,7 @@ nav.social li:last-child a {
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+   
 }
 
 /* ==========================================================================
@@ -274,6 +303,14 @@ nav.social li:last-child a {
 
 .clearfix {
     *zoom: 1;
+}
+.left {
+	float: left;
+	clear: left;
+}
+.right {
+	float: right;
+	clear: right;
 }
 
 /* ==========================================================================
