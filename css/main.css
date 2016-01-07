@@ -57,15 +57,6 @@ textarea {
     padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
 .footer-container footer {
     color: white;
     padding: 20px 0;
@@ -90,20 +81,28 @@ html {
     font: 16px/26px Lora, Georgia, Times, Times New Roman, serif;
     color: #464646;
 }
-h1, h2, h3, h4, h5, h6, nav a, .btn, .read-more {
+h1, h2, h3, h4, h5, h6, 
+nav a, .btn, a.read-more, 
+.twitter {
 	font-family: 'Fira Sans', sans-serif;
-	
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #013e68;
 	margin-top: 0;
 }
 h1, .home h2 {
-	font-size: 2.25em;
+	font-size: 2.25rem;
 	font-weight: 700;
 }
-.home .news h3 {
-	font-size: 1.3em;
+.home .news h2 {
+	margin-bottom: 0;
+}
+.home .news a h3 {
+	color: #0275ae;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: 500;
+	font-size: 1.3rem;
 }
 
 /* Links */
@@ -124,6 +123,12 @@ a.btn {
 	font-size: 1rem;
 	display: inline-block;
 	text-decoration: none;
+}
+a.read-more {
+	display: inline-block;
+}
+.twitter .tweet a {
+	font-weight: normal;
 }
 
 /*    MAIN CONTENT
@@ -195,14 +200,21 @@ nav.social li:last-child a {
 	margin-right: 0;
 }
 
+/* Footer */
+.footer-container {
+	background-color: #0e75b0;
+}
+
 /* Homepage */
-.home section.about {
+.home section {
 	width: 100%;
-	background: url('../img/stock-photo-city.jpg') no-repeat left top;
-	background-size: cover;
 	float: left;
 	clear: both;
 	padding: 100px 0;
+}
+.home section.about {
+	background: url('../img/stock-photo-city.jpg') no-repeat left top;
+	background-size: cover;
 }
 .home section.about article.content {
 	padding: 5%;
@@ -219,6 +231,13 @@ nav.social li:last-child a {
 .home section.about article.content img {
 	margin-left: 40px;
 }
+.home section.feeds {
+}
+.home section.feeds .news {
+	width: 60%;
+	float: left;
+	clear: left;
+}
 .home .news article {
 	font-size: 1.12rem;
 }
@@ -234,13 +253,51 @@ nav.social li:last-child a {
 .home .news article p {
 	display: inline;
 }
-.home .news a h3 {
-	color: #0275ae;
-	text-transform: uppercase;
-	text-decoration: underline;
-	font-weight: 500;
+.home section.feeds aside {
+	width: 30%;
+	padding: 0px 5% 10px;
+	float: right;
+	clear: right;
 }
-
+.home .twitter {
+	margin-bottom: 50px;
+}
+.home .twitter a.handle {
+	font-size: 1.12rem;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: none;
+	color: #0275ae;
+}
+.home .twitter .tweet {
+	border-left: 5px solid #0275ae;
+	padding-left: 20px;
+	font-size: 21px;
+}
+.home .twitter .tweet .date {
+	font: italic .87rem Lora, Georgia, Times, Times New Roman, serif;
+	font-size: 14px;
+	color: #9d9d9d;	
+}
+.home .support p {
+	font-size: 1.12rem;
+}
+.home .support ul {
+	margin: 0 0 0 -7px;
+	padding: 0;
+}
+.home .support li {
+	list-style: none;
+	padding: 7px;
+	display: inline-block;
+}
+.home .support img {
+	border-radius: 5px;
+}
+.home .support a.btn {
+	background-color: #013e68;
+	border: 2px solid #002e4d;
+}
 
 
 
