@@ -83,7 +83,7 @@ html {
 }
 h1, h2, h3, h4, h5, h6, 
 nav a, .btn, a.read-more, 
-.twitter {
+.twitter, .footer-container {
 	font-family: 'Fira Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -179,7 +179,7 @@ nav.main a:hover {
 nav.main li:first-child a {
     margin-left: 0;
 }
-nav.main li:last-child a {
+.header-container nav.main li:last-child a {
     margin-right: 0;
     background-color: #f65151;
     border-radius: 5px;
@@ -203,6 +203,55 @@ nav.social li:last-child a {
 /* Footer */
 .footer-container {
 	background-color: #0e75b0;
+	float: left;
+	width: 100%;
+	padding: 100px 0;
+}
+.footer-container .logo {
+	/*width: 30%;*/
+	max-width: 180px;
+}
+.footer-container .details {
+	width: 325px;
+	float: left;
+	clear: left;
+}
+.footer-container dl {
+	font-size: .87rem;
+	line-height: 1.25rem;
+}
+.footer-container dd {
+	margin: 0;
+	padding: 0;
+}
+.footer-container dt {
+	margin: 0;
+	padding: 0;
+}
+.footer-container dt:first-of-type {
+	font-weight: 700;
+}
+.footer-container dd.copyright {
+	margin-top: 25px;
+}
+.footer-container dd.paid-for {
+	border: 1px solid #fff;
+	padding: 3px 0;
+	margin-top: 20px;
+	text-align: center;
+}
+.footer-container nav.main {
+	max-width: 660px;
+	float: right;
+	clear: right;
+}
+.footer-container nav.main a {
+    text-transform: none;
+    margin: 0;
+    padding: 10px 2%;
+}
+.footer-container nav.main li:last-child a {
+	padding-right: 0;
 }
 
 /* Homepage */
