@@ -114,6 +114,9 @@ a {
 	color: #38a6e8;
 	font-weight: 500;
 }
+a:hover, .home .news a h3:hover {
+	color: #013e68;
+}
 a.btn {
 	background-color: #38a6e8;
 	border-radius: 5px;
@@ -126,6 +129,9 @@ a.btn {
 	font-size: 1rem;
 	display: inline-block;
 	text-decoration: none;
+}
+a.btn:hover {
+	background-color: #0275ae;
 }
 a.read-more {
 	display: inline-block;
