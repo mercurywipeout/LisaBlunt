@@ -162,22 +162,26 @@ nav ul {
     list-style-type: none;
     text-align: right;
 }
+header nav.main a {
+	border: 1px solid #38a6e8;
+}
 nav.main a {
-    padding: 15px 0;
     text-decoration: none;
     font-weight: 500;
     color: white;
     text-transform: uppercase;
-    margin: 0 1.7%;
-    padding: 10px 2%;
+    margin: 0;
+    padding: 8px 3.5%;
     display: inline;
 }
-nav.main a:hover,
 nav.main a:visited {
     color: white;
 }
-nav.main a:hover {
-    text-decoration: underline;
+header nav.main a:hover, header nav.main .active a {
+    color: #38a6e8;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #bde2f8;
 }
 nav.main li:first-child a {
     margin-left: 0;
@@ -188,6 +192,9 @@ nav.main li:first-child a {
     border-radius: 5px;
     border: 2px solid #f43d3d;
     padding: 7px 22px;
+}
+.header-container nav.main li:last-child a:hover {
+	color: white;
 }
 nav.social {
 	float: right;
