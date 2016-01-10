@@ -90,9 +90,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #013e68;
 	margin-top: 0;
 }
-h1, .home h2 {
+h1, h2 {
 	font-size: 2.25rem;
 	font-weight: 700;
+}
+h2 {
+	line-height: 2.8rem;
 }
 .home .news h2 {
 	margin-bottom: 0;
@@ -259,15 +262,17 @@ nav.social li:last-child a {
 	padding-top: 0;
 }
 
-/* Homepage */
-.home section {
+/* Pages */
+section {
 	width: 100%;
 	float: left;
 	clear: both;
 	padding: 100px 0;
 }
 .home section.hero {
-	background: url('../img/arms-folded.jpg') no-repeat center top;
+	background-image: url('../img/arms-folded.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
 	background-size: cover;
 	height: 465px;
 	padding-top: 35px;
@@ -335,27 +340,28 @@ nav.social li:last-child a {
 	border-radius: 5px;
 	text-align: center;
 }
-.home section.donate {
+section.donate {
 	background-color: #013e68;
 	padding: 20px 0;
 	font-family: 'Fira Sans', sans-serif;
 	border: 2px solid #025289;
+	clear: both;
 }
-.home section.donate .content {
+section.donate .content {
 	padding: 0!important;
 	width: 720px;
 	margin: 0 auto;
 }
-.home section.donate h2 {
+section.donate h2 {
 	color: white;
 	display: inline-block;
 }
-.home section.donate ol {
+section.donate ol {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
 }
-.home section.donate li {
+section.donate li {
 	background-color: #f65151;
 	border: 2px solid #f43d3d;
 	width: 95px;
@@ -366,11 +372,11 @@ nav.social li:last-child a {
 	text-align: center;
 	display: inline-block;
 }
-.home section.donate a {
+section.donate a {
 	font-size: 42px;
 	color: white;
 }
-.home section.donate li::first-letter {
+section.donate li::first-letter {
 	font-size: 21px;
 	vertical-align: super;
 	color: #f5d7d7;
@@ -394,10 +400,10 @@ nav.social li:last-child a {
 .home section.about article.content img {
 	margin-left: 40px;
 }
-.home section.feeds {
+.home section.feeds, section.sub-container {
 	background: linear-gradient(to right, #ffffff 0%,#ffffff 59.5%,#dcf0fb 60%,#dcf0fb 60%,#eff8fd 60%,#eff8fd 100%);
 }
-.home section.feeds .news {
+.home section.feeds .news, section.sub-container article {
 	width: 60%;
 	max-width: 600px;
 	float: left;
@@ -418,53 +424,78 @@ nav.social li:last-child a {
 .home .news article p {
 	display: inline;
 }
-.home section.feeds aside {
+.home section.feeds aside, section.sub-container aside {
 	width: 30%;
 	padding: 0px 5% 10px;
 	float: right;
 	clear: right;
 }
-.home .twitter {
+aside .twitter {
 	margin-bottom: 50px;
 }
-.home .twitter a.handle {
+aside .twitter a.handle {
 	font-size: 1.12rem;
 	font-weight: 700;
 	font-style: italic;
 	text-decoration: none;
 	color: #0275ae;
 }
-.home .twitter .tweet {
+aside .twitter .tweet {
 	border-left: 5px solid #0275ae;
 	padding-left: 20px;
 	font-size: 21px;
 }
-.home .twitter .tweet .date {
+aside .twitter .tweet .date {
 	font: italic .87rem Lora, Georgia, Times, Times New Roman, serif;
 	font-size: 14px;
 	color: #9d9d9d;	
 }
-.home .support p {
+aside .support p {
 	font-size: 1.12rem;
 }
-.home .support ul {
+aside .support ul {
 	margin: 0 0 0 -7px;
 	padding: 0;
 }
-.home .support li {
+aside .support li {
 	list-style: none;
 	padding: 7px;
 	display: inline-block;
 }
-.home .support img {
+aside .support img {
 	border-radius: 5px;
 }
-.home .support a.btn {
+aside .support a.btn {
 	background-color: #013e68;
 	border: 2px solid #002e4d;
 }
-
-
+section.sub-container article {
+	font-size: 1.1rem;
+}
+section.sub-container article .left {
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+section.sub-container article .right {
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+.page section.hero {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	padding-top: 265px;
+	padding-bottom: 0;
+}
+.page section.hero h1 {
+	font-style: italic;
+	color: white;
+	font-size: 5rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+	padding-bottom: 60px;
+	margin: 0;
+}
 
 /* ==========================================================================
    Media Queries
