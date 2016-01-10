@@ -41,39 +41,6 @@ textarea {
     resize: vertical;
 }
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-/* ==============
-    MOBILE: Main
-   ============== */
-.content {
-    width: 90%;
-    margin: 0 5%;
-}
-
-.main {
-    padding: 0px 0;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 /*    TYPOGRAPHY
 /*--------------------------------------*/
 
@@ -149,7 +116,7 @@ a.read-more {
 	border-bottom: 2px solid #9acdec;
 }
 header {
-	max-width: 1020px;
+	width: 90%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -161,6 +128,7 @@ nav.main  {
     float: right;
     min-width: 700px;
     margin-top: 40px;
+    clear: right;
 }
 nav ul {
     margin: 0;
@@ -207,6 +175,7 @@ nav.social {
 	width: 200px;
 	padding: 0;
 	margin-top: 25px;
+	clear: right;
 }
 nav.social a  {
 	margin: 0 5px;
@@ -222,6 +191,7 @@ nav.social li:last-child a {
 	float: left;
 	width: 100%;
 	padding: 100px 0;
+	color: white;
 }
 .footer-container .content {
 	float: left;
@@ -276,6 +246,10 @@ nav.social li:last-child a {
 }
 
 /* Pages */
+.content {
+    width: 90%;
+    margin: 0 5%;
+}
 section {
 	width: 100%;
 	float: left;
@@ -357,7 +331,8 @@ section.donate {
 	background-color: #013e68;
 	padding: 20px 0;
 	font-family: 'Fira Sans', sans-serif;
-	border: 2px solid #025289;
+	border-top: 2px solid #025289;
+	border-bottom: 2px solid #025289;
 	clear: both;
 }
 section.donate .content {
