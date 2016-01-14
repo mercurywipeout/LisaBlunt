@@ -136,6 +136,10 @@ nav ul {
     list-style-type: none;
     text-align: right;
 }
+nav.main li {
+	margin: 0;
+	padding: 0;
+}
 header nav.main a {
 	border: 1px solid #38a6e8;
 }

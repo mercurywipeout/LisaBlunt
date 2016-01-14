@@ -1,11 +1,17 @@
 <div class="header-container">
     <header class="clearfix">
-        <h1>
-        	<img src="sites/all/themes/lisablunt/img/logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo" />
-        	<span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
-        </h1>
+        <a href="/">
+	        <h1>
+	        	<img src="/sites/all/themes/lisablunt/img/logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo" />
+	        	<span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
+	        </h1>
+	    </a>
         <nav class="social">
-            <?php print render($page['social_navigation']); ?>
+            <?php // print render($page['social_navigation']); ?>
+            <ul>
+                <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
+                <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
+            </ul>
         </nav>
         <nav class="main">
             <?php print render($page['navigation']); ?>
@@ -15,7 +21,8 @@
 
 <div class="main-container">
     <div class="main clearfix">
-        <section class="hero" style="background-image: url('img/landscape.jpg');">
+
+        <section class="hero" style="background-image: url('<?php print $hero_image; ?>');">
         	<div class="content">
                 <h1><?php print $title; ?></h1>
             </div>
@@ -68,7 +75,7 @@
     <footer class="content">
         <div class="details">
             <h3>
-            	<img src="img/footer-logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo"/>
+            	<img src="/sites/all/themes/lisablunt/img/footer-logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo"/>
                 <span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
             </h3>
             <?php print render($page['footer']); ?>
@@ -77,7 +84,11 @@
             <?php print render($page['footer_navigation']); ?>
         </nav>
         <nav class="social">
-        	<?php print render($page['social_navigation']); ?>
+        	<?php // print render($page['social_navigation']); ?>
+        	<ul>
+        	    <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
+        	    <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
+        	</ul>
         </nav>
     </footer>
 </div>

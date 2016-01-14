@@ -1,11 +1,17 @@
 <div class="header-container">
     <header class="clearfix">
-        <h1>
-        	<img src="sites/all/themes/lisablunt/img/logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo" />
-        	<span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
-        </h1>
+        <a href="/">
+            <h1>
+            	<img src="/sites/all/themes/lisablunt/img/logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo" />
+            	<span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
+            </h1>
+        </a>
         <nav class="social">
-            <?php print render($page['social_navigation']); ?>
+            <?php // print render($page['social_navigation']); ?>
+            <ul>
+                <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
+                <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
+            </ul>
         </nav>
         <nav class="main">
             <?php print render($page['navigation']); ?>
@@ -39,28 +45,29 @@
         	<div class="content">
                 <h2>Donate Now!</h2>
                 <ol>
-                	<a href="#"><li>$5</li></a>
-                	<a href="#"><li>$10</li></a>
-                	<a href="#"><li>$25</li></a>
-                	<a href="#"><li>$50</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=05 "><li>$5</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=10"><li>$10</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=25"><li>$25</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=50"><li>$50</li></a>
                 </ol>
             </div>
         </section>
         <section class="about clearfix">
         	<article class="content">
-                <h2>About Lisa</h2>
+        		<?php print render($page['content']); ?>
+                <!--<h2>About Lisa</h2>
                 <img src="img/hand-on-chin.jpg" alt="Lisa sitting on chair." class="right" />
                 <p>Nunc lobortis dignissim neque, eget tempor tortor pharetra sed. Etiam sit amet velit elit. Donec venenatis vitae diam ac tristique. Nunc ac dignissim tortor, eget viverra augue. In vel interdum dolor, in euismod purus. Vestibulum dapibus accumsan cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 
                 <p>Donec cursus feugiat ornare. Proin eget ligula erat. Cras suscipit mi non lorem finibus maximus. Vestibulum vitae orci ullamcorper, iaculis neque quis, dictum nulla. Nunc tellus risus, lobortis quis mi sed, porttitor hendrerit mauris.</p>
-                <a href="#" class="btn">Read More &rsaquo;</a>
+                <a href="#" class="btn">Read More &rsaquo;</a>-->
             </article>
         </section>
         <section class="feeds">
         	<div class="content">
             	<div class="news">
             		<h2>Latest News</h2>
-                	<ul>
+                	<!--<ul>
 	                	<li>
 		                	<article>
 		                		<a href="#"><h3>Nunc ac dignissim tortor eget viverra augue</h3></a>
@@ -82,7 +89,8 @@
 		                		<a href="#" class="read-more">Read More &rsaquo;</a>
 		                	</article>
 	                	</li>
-                	</ul>
+                	</ul>-->
+                	<?php print render($page['sidebar_first']); ?>
                 	<a href="#" class="btn">View All News &rsaquo;</a>
             	</div>
             	<aside>
@@ -123,7 +131,7 @@
     <footer class="content">
         <div class="details">
             <h3>
-            	<img src="img/footer-logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo"/>
+            	<img src="/sites/all/themes/lisablunt/img/footer-logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo"/>
                 <span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
             </h3>
             <?php print render($page['footer']); ?>
@@ -132,7 +140,11 @@
             <?php print render($page['footer_navigation']); ?>
         </nav>
         <nav class="social">
-        	<?php print render($page['social_navigation']); ?>
+        	<?php // print render($page['social_navigation']); ?>
+        	<ul>
+        	    <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
+        	    <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
+        	</ul>
         </nav>
     </footer>
 </div>
