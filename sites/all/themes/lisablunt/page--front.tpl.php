@@ -66,29 +66,6 @@
         <section class="feeds">
         	<div class="content">
             	<div class="news">
-                	<!--<ul>
-	                	<li>
-		                	<article>
-		                		<a href="#"><h3>Nunc ac dignissim tortor eget viverra augue</h3></a>
-		                		<p>In vel interdum dolor, in euismod purus. Vestibulum dapibus accumsan cursus. Lorem ipsum dolor sit amet, consectetur.</p>
-		                		<a href="#" class="read-more">Read More &rsaquo;</a>
-	                		</article>
-	                	</li>
-	                	<li>
-	                		<article>
-		                		<a href="#"><h3>Nunc tellus risus lobortis quis sed</h3></a>
-		                		<p>Donec cursus feugiat ornare. Proin eget ligula erat. Cras suscipit mi non lorem finibus maximus. Vestibulum vitae orci ullamcorper, iaculis neque quis, dictum nulla.</p>
-		                		<a href="#" class="read-more">Read More &rsaquo;</a>
-		                	</article>
-	                	</li>
-	                	<li>
-		                	<article>
-		                		<a href="#"><h3>Interdum dolor cursus ipsum consectetur adipiscing</h3></a>
-		                		<p>Quisque vestibulum bibendum arcu vel aliquet. Quisque interdum elit metus, at elementum nulla rhoncus quis. Proin rhoncus euismod rhoncus.</p>
-		                		<a href="#" class="read-more">Read More &rsaquo;</a>
-		                	</article>
-	                	</li>
-                	</ul>-->
                 	<?php print render($page['sidebar_first']); ?>
             	</div>
             	<aside>

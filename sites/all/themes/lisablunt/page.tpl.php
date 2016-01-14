@@ -21,15 +21,19 @@
 
 <div class="main-container">
     <div class="main clearfix">
-
-        <section class="hero" style="background-image: url('<?php print $hero_image; ?>');">
-        	<div class="content">
-                <h1><?php print $title; ?></h1>
-            </div>
-        </section>
+		<?php if (empty($hero_image)) { } else { ?>
+		<section class="hero" style="background-image: url('<?php print $hero_image; ?>');">
+			<div class="content">
+		        <h1><?php print $title; ?></h1>
+		    </div>
+		</section>
+		<?php } ?>
         <section class="sub-container">
         	<div class="content">
             	<article>
+            		<?php if (empty($hero_image)) { ?>
+					<h1><?php print $title; ?></h1>
+            		<?php } ?>
                 	<?php print render($page['content']); ?>
         		</article>
             	<aside>
@@ -66,7 +70,15 @@
                </div>
         </section>
         <section class="donate">
-        	<?php print render($page['donate']); ?>
+        	<div class="content">
+                <h2>Donate Now!</h2>
+                <ol>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=05 "><li>$5</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=10"><li>$10</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=25"><li>$25</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=50"><li>$50</li></a>
+                </ol>
+            </div>
         </section>
     </div>
 </div>

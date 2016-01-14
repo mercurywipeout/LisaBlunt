@@ -152,7 +152,7 @@ nav.main a {
 nav.main a:visited {
     color: white;
 }
-header nav.main a:hover, header nav.main .active a {
+header nav.main a:hover, header nav.main .active-trail a {
     color: #38a6e8;
     background-color: white;
     border-radius: 5px;
