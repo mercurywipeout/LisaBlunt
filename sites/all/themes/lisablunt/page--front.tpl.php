@@ -66,7 +66,6 @@
         <section class="feeds">
         	<div class="content">
             	<div class="news">
-            		<h2>Latest News</h2>
                 	<!--<ul>
 	                	<li>
 		                	<article>
@@ -91,7 +90,6 @@
 	                	</li>
                 	</ul>-->
                 	<?php print render($page['sidebar_first']); ?>
-                	<a href="#" class="btn">View All News &rsaquo;</a>
             	</div>
             	<aside>
                 	<div class="twitter">
