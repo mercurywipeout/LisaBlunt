@@ -1,6 +1,7 @@
 /******************************************************************
 Site Name: Lisa Blunt Democrat for Congress
 Author: Lucian Tucker
+Note: Site is styled responsively with mobile first in mind.
 
 ******************************************************************/
 
@@ -61,18 +62,42 @@ h1, h2 {
 	font-size: 2.25rem;
 	font-weight: 700;
 }
+article h1 {
+	font-size: 4rem;
+}
+article h2, article h3, article h4, article h5, article h5, article h6 {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
 h2 {
 	line-height: 2.8rem;
 }
 .front .news h2 {
 	margin-bottom: 0;
 }
-.front .news h3 a {
+h3 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+h3 a, a h3 {
 	color: #0275ae;
 	text-transform: uppercase;
 	text-decoration: underline;
 	font-weight: 500;
 	font-size: 1.3rem;
+	line-height: 1.3rem;
+}
+h4 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+h5 {
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+}
+h6 {
+	font-size: 1rem;
+	line-height: 1rem;
 }
 
 /* Links */
@@ -80,8 +105,10 @@ a {
 	text-decoration: underline;
 	color: #38a6e8;
 	font-weight: 500;
+	-webkit-transition: all 0.24s ease-in-out;
+	transition: all 0.24s ease-in-out;
 }
-a:hover, .front .news a h3:hover {
+a:hover, a h3:hover, h3 a:hover {
 	color: #013e68;
 }
 a.btn, .more-link a {
@@ -96,6 +123,8 @@ a.btn, .more-link a {
 	font-size: 1rem;
 	display: inline-block;
 	text-decoration: none;
+	-webkit-transition: all 0.24s ease-in-out;
+	transition: all 0.24s ease-in-out;
 }
 a.btn:hover, .more-link a:hover {
 	background-color: #0275ae;
@@ -121,17 +150,22 @@ header h1 {
 	margin: 10px 0;
 	float: left;
 }
-nav.main  {
-    float: right;
-    min-width: 700px;
-    margin-top: 40px;
-    clear: right;
-}
 nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+header nav ul {
     text-align: right;
+}
+nav ul li {
+	display: inline;
+}
+nav.main  {
+    float: right;
+    width: 60%;
+    margin-top: 40px;
+    clear: right;
 }
 nav.main li {
 	margin: 0;
@@ -139,17 +173,16 @@ nav.main li {
 }
 header nav.main a {
 	border: 1px solid #38a6e8;
-}
-nav.main a {
     text-decoration: none;
     font-weight: 500;
     color: white;
     text-transform: uppercase;
     margin: 0;
-    padding: 8px 3.5%;
+    padding: 8px 1.5%;
     display: inline;
+    background-color: #38a6e8;
 }
-nav.main a:visited {
+header nav.main a:visited {
     color: white;
 }
 header nav.main a:hover, header nav.main .active-trail a {
@@ -157,6 +190,8 @@ header nav.main a:hover, header nav.main .active-trail a {
     background-color: white;
     border-radius: 5px;
     border: 1px solid #bde2f8;
+    -webkit-transition: all 0.24s ease-in-out;
+    transition: all 0.24s ease-in-out;
 }
 nav.main li:first-child a {
     margin-left: 0;
@@ -171,12 +206,8 @@ nav.main li:first-child a {
 .header-container nav.main li:last-child a:hover {
 	color: white;
 }
-nav.social {
-	float: right;
-	width: 200px;
-	padding: 0;
-	margin-top: 25px;
-	clear: right;
+header nav.social  {
+	display: none;
 }
 nav.social a  {
 	margin: 0 5px;
@@ -198,9 +229,12 @@ nav.social li:last-child a {
 	float: left;
 }
 .footer-container .details {
-	width: 325px;
-	float: left;
-	clear: left;
+	max-width: 325px;
+	width: 100%;
+	text-align: center;
+	float: none;
+	clear: none;
+	margin: 0 auto;
 }
 .footer-container dl {
 	font-size: .87rem;
@@ -227,19 +261,35 @@ nav.social li:last-child a {
 	text-align: center;
 }
 .footer-container nav.main {
-	max-width: 660px;
-	float: right;
-	clear: right;
-	margin-top: 0px;
+	width: 100%;
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer-container nav.main li {
+	display: block;
 }
 .footer-container nav.main a {
     text-transform: none;
     margin: 0;
     padding: 0 2%;
+    border: none;
+    color: white;
+    background: none;
+    text-decoration: none;
 }
 .footer-container nav.main li:last-child a {
 	padding-right: 0;
 	padding-top: 0;
+}
+.footer-container nav.social {
+	float: none;
+	width: 200px;
+	padding: 0;
+	margin: 25px auto 0 auto;
+	clear: none;
+	text-align: center;
 }
 
 /* Pages */
@@ -251,27 +301,28 @@ section {
 	width: 100%;
 	float: left;
 	clear: both;
-	padding: 100px 0;
+	padding: 25px 0;
 }
 .front section.hero {
-	background-image: url('../img/arms-folded.jpg');
+	background-image: url('../img/hand-chin-hero.jpg');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: -20px 50px;
 	background-size: cover;
-	height: 465px;
-	padding-top: 35px;
+	background-color: white;
+	height: 200px;
+	padding: 15px 0 100px 0;
 }
 .front section.hero h2 {
 	font-style: italic;
-	font-size: 4.3rem;
-	line-height: 4.3rem;
-	width: 710px;
-	float: right;
+	font-size: 2.6rem;
+	line-height: 2.6rem;
+	float: none;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	margin-bottom: 5px;
 }
 .front section.hero h2 span {
-	display: block;
-	font-size: 6.6rem;
+	display: inline;
 	color: #38a6e8;
 	margin: 10px 0;
 	text-transform: uppercase;
@@ -287,33 +338,38 @@ section {
 	float: right;
 	clear: right;
 	font-family: 'Fira Sans', sans-serif;
-	padding: 22px 22px 22px 60px;
-	margin-right: 260px;
+	padding: 22px;
+	display: none;
+}
+.front section.contact form {
+	font-family: 'Fira Sans', sans-serif;
 }
 .front section.hero form h3 {
 	color: #f68a51;
 	font-size: 30px;
+	margin-bottom: 15px;
 }
-.front section.hero form ul {
+.front form ul {
 	margin: 0;
 	padding: 0;
 }
-.front section.hero form li {
+.front form li {
 	list-style: none;
-	display: inline-block;
+	display: block;
+	margin-bottom: 10px;
 }
-.front section.hero form label {
+.front form label {
 	display: block;
 	color: #252525;
 	font-weight: 700;
 }
-.front section.hero form input {
+.front form input {
 	padding: 7px 10px;
 }
-.front section.hero form input#zip {
+.front form input#zip {
 	width: 50px;
 }
-.front section.hero form button {
+.front form button {
 	background-color: #f68a51;
 	border: 2px solid #ea8149;
 	color: white;
@@ -323,6 +379,9 @@ section {
 	width: 90px;
 	border-radius: 5px;
 	text-align: center;
+}
+.contact {
+	display: block;
 }
 section.donate {
 	background-color: #013e68;
@@ -334,24 +393,27 @@ section.donate {
 }
 section.donate .content {
 	padding: 0!important;
-	width: 720px;
+	width: 90%;
 	margin: 0 auto;
 }
 section.donate h2 {
 	color: white;
-	display: inline-block;
+	display: block;
+	text-align: center;
 }
 section.donate ol {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	display: inline-block;
+	display: block;
+	text-align: center;
+	width: 75%;
 }
 section.donate li {
 	background-color: #f65151;
 	border: 2px solid #f43d3d;
 	width: 95px;
 	padding: 30px 0;
-	margin: 0 12px;
+	margin: 2%;
 	border-radius: 95px;
 	list-style: none;
 	text-align: center;
@@ -382,38 +444,34 @@ section.donate li::first-letter {
 	font-size: 1.12rem;
 	line-height: 24px;
 }
-.front section.about article.content img {
-	margin-left: 40px;
+.front section.about article.content p:first-of-type {
+	text-align: center;
 }
-.front section.feeds, section.sub-container {
-	background: linear-gradient(to right, #ffffff 0%,#ffffff 59.5%,#dcf0fb 60%,#dcf0fb 60%,#eff8fd 60%,#eff8fd 100%);
+.front section.about article.content img {
+	margin: 0 auto;
+	height: auto;
+	max-width: 304px;
+	width: 100%;
+	float: none;
 }
 .front section.feeds .news, section.sub-container article {
-	width: 60%;
-	max-width: 600px;
-	float: left;
-	clear: left;
+	width: 100%;
 }
 .front .news {
 	font-size: 1.12rem;
 }
-.front .news ul {
+ul.news-list, ul.issues-list {
 	margin: 0 0 15px 0;
 	padding: 0;
 }
-.front .news li {
+ul.news-list li, ul.issues-list li {
 	list-style: none;
 	border-bottom: 1px solid #e5e5e5;
 	padding: 30px 0;
 }
-.front .news p {
-	display: inline;
-}
 .front section.feeds aside, section.sub-container aside {
-	width: 30%;
-	padding: 0px 5% 10px;
-	float: right;
-	clear: right;
+	width: 100%;
+	margin: 25px 0;
 }
 aside .twitter {
 	margin-bottom: 50px;
@@ -488,42 +546,204 @@ section.sub-container article .right {
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-	
-    
+	header nav.social {
+		float: right;
+		width: 200px;
+		padding: 0;
+		margin-top: 25px;
+		clear: right;
+	}
+}
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
 
-    nav ul li {
-        display: inline;
-    }
+@media only screen and (min-width: 500px) {
 
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+	section.donate ol {
+		width: 60%;
+	}
+	section.donate li {
+		margin: 3%;
+	}
+}
+@media only screen and (min-width: 600px) {
+
+	.contact {
+		display: none;
+	}
+	section {
+		padding: 100px 0;
+	}
+	.front section.hero {
+		background-position: -100px 20px;
+		height: 300px;
+	}
+	.front section.hero h2 {
+		font-size: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.front section.hero form {
+		display: block;
+	}
+	section.donate ol {
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+	}
+	section.donate li {
+		margin: 0 12px;
+	}
+
+	/* Footer */
+	.footer-container nav.main li {
+		display: inline;
+	}
+	.footer-container nav.main a {
+	    padding: 0 1%;
+	}
 }
 
 @media only screen and (min-width: 768px) {
 
+	.front section.hero {
+		background-size: cover;
+		padding-top: 35px;
+	}
+	.front section.hero h2 {
+		margin-bottom: 80px;
+	}
+	.front section.hero h2 span {
+		letter-spacing: -2px;
+	}
+	.front section.hero form {
+		border-radius: 5px;
+		margin-right: 0;
+	}
+	.front section.hero form li {
+		display: inline-block;
+	}
+	section.donate .content {
+		width: 740px;
+	}
+	section.donate h2 {
+		display: inline-block;
+		text-align: left;
+		margin-right: 20px;
+	}
+	section.donate ol {
+		width: auto;
+	}
+	.front section.about article.content p:first-of-type {
+		text-align: left;
+	}
+	.front section.about article.content img {
+		margin-left: 40px;
+		float: right;
+	}
+	.front section.feeds, section.sub-container {
+		background: linear-gradient(to right, #ffffff 0%,#ffffff 59.5%,#dcf0fb 60%,#dcf0fb 60%,#eff8fd 60%,#eff8fd 100%);
+	}
+	.front section.feeds .news, section.sub-container article {
+		width: 60%;
+		max-width: 600px;
+		float: left;
+		clear: left;
+	}
+	.front section.feeds aside, section.sub-container aside {
+		width: 30%;
+		padding: 0px 5% 10px;
+		float: right;
+		clear: right;
+		margin: 0;
+	}
+	.footer-container nav.main {
+		width: 100%;
+		float: none;
+		clear: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
 
-/* ============
-    WIDE: Main
-   ============ */
+@media only screen and (min-width: 980px) {
 
+    header nav.social  {
+    	display: block;
+    }
+    .front section.hero {
+    	background-position: center top;
+    	background-size: cover;
+    	height: 465px;
+    	padding-top: 35px;
+    }
+    .front section.hero h2 {
+    	font-size: 4.3rem;
+    	line-height: 4.3rem;
+    	width: 710px;
+    	float: right;
+    }
+    .front section.hero h2 span {
+    	display: block;
+    	font-size: 6.6rem;
+    }
     
+    .front section.hero form {
+    	margin-right: 180px;
+    }
+    
+	/* Footer */
+	.footer-container .details {
+		text-align: left;
+		float: left;
+		clear: left;
+	}
+	.footer-container nav.main {
+		width: 550px;
+		float: right;
+		clear: right;
+		margin: 0 auto;
+		text-align: right;
+	}
+	.footer-container nav.main a {
+	    padding: 0 1%;
+	}
+	.footer-container nav.social {
+		float: right;
+		clear: right;
+		text-align: right;
+	}
 }
 
 @media only screen and (min-width: 1140px) {
 
-/* ===============
-    Maximal Width
-   =============== */
-
-   
+	header nav.main a {
+	    padding: 8px 3.5%;
+	}
+	nav ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style-type: none;
+	    text-align: right;
+	}
+	header nav.main {
+	    width: 70%;
+	}
+	.footer-container .details {
+		width: 325px;
+		float: left;
+		clear: left;
+		text-align: left;
+	}
+	.footer-container nav.main {
+		width: 650px;
+		float: right;
+		clear: right;
+		margin-top: 0px;
+	}
+	.footer-container nav.main a {
+	    padding: 0 2%;
+	}
 }
 
 /* ==========================================================================

@@ -41,6 +41,24 @@
                 </form>
             </div>
         </section>
+        <section class="contact">
+        	<div class="content">
+                <form method="post" action="">
+                	<h3>Join Lisa!</h3>
+                    <ul>
+                        <li>
+                        	<label for="email">Email</label>
+                        	<input id="email" type="text" name="email" required placeholder="email@domain.com" />
+                        </li>
+                        <li>
+                        	<label for="zip">Zip</label>
+                        	<input id="zip" type="text" name="zip" required placeholder="12345" />
+                        </li>
+                        <button class="btn">Join &rsaquo;</button>
+                    </ul>
+                </form>
+            </div>
+        </section>
         <section class="donate">
         	<div class="content">
                 <h2>Donate Now!</h2>
@@ -55,12 +73,6 @@
         <section class="about clearfix">
         	<article class="content">
         		<?php print render($page['content']); ?>
-                <!--<h2>About Lisa</h2>
-                <img src="img/hand-on-chin.jpg" alt="Lisa sitting on chair." class="right" />
-                <p>Nunc lobortis dignissim neque, eget tempor tortor pharetra sed. Etiam sit amet velit elit. Donec venenatis vitae diam ac tristique. Nunc ac dignissim tortor, eget viverra augue. In vel interdum dolor, in euismod purus. Vestibulum dapibus accumsan cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                <p>Donec cursus feugiat ornare. Proin eget ligula erat. Cras suscipit mi non lorem finibus maximus. Vestibulum vitae orci ullamcorper, iaculis neque quis, dictum nulla. Nunc tellus risus, lobortis quis mi sed, porttitor hendrerit mauris.</p>
-                <a href="#" class="btn">Read More &rsaquo;</a>-->
             </article>
         </section>
         <section class="feeds">
