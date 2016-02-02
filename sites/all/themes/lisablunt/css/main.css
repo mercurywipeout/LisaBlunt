@@ -8,6 +8,7 @@ Note: Site is styled responsively with mobile first in mind.
 html {
     font-size: 1em;
     line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -45,6 +46,117 @@ textarea {
 /*    TYPOGRAPHY
 /*--------------------------------------*/
 
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/lora-regular-webfont.eot');
+    src: url('fonts/lora-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lora-regular-webfont.woff2') format('woff2'),
+         url('fonts/lora-regular-webfont.woff') format('woff'),
+         url('fonts/lora-regular-webfont.ttf') format('truetype'),
+         url('fonts/lora-regular-webfont.svg#loraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/lora-italic-webfont.eot');
+    src: url('fonts/lora-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lora-italic-webfont.woff2') format('woff2'),
+         url('fonts/lora-italic-webfont.woff') format('woff'),
+         url('fonts/lora-italic-webfont.ttf') format('truetype'),
+         url('fonts/lora-italic-webfont.svg#loraitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/lora-bold-webfont.eot');
+    src: url('fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lora-bold-webfont.woff2') format('woff2'),
+         url('fonts/lora-bold-webfont.woff') format('woff'),
+         url('fonts/lora-bold-webfont.ttf') format('truetype'),
+         url('fonts/lora-bold-webfont.svg#lorabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/lora-bolditalic-webfont.eot');
+    src: url('fonts/lora-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lora-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/lora-bolditalic-webfont.woff') format('woff'),
+         url('fonts/lora-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/lora-bolditalic-webfont.svg#lorabold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-regular-webfont.eot');
+    src: url('fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-regular-webfont.woff2') format('woff2'),
+         url('fonts/firasans-regular-webfont.woff') format('woff'),
+         url('fonts/firasans-regular-webfont.ttf') format('truetype'),
+         url('fonts/firasans-regular-webfont.svg#fira_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-italic-webfont.eot');
+    src: url('fonts/firasans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-italic-webfont.woff2') format('woff2'),
+         url('fonts/firasans-italic-webfont.woff') format('woff'),
+         url('fonts/firasans-italic-webfont.ttf') format('truetype'),
+         url('fonts/firasans-italic-webfont.svg#fira_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-medium-webfont.eot');
+    src: url('fonts/firasans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-medium-webfont.woff2') format('woff2'),
+         url('fonts/firasans-medium-webfont.woff') format('woff'),
+         url('fonts/firasans-medium-webfont.ttf') format('truetype'),
+         url('fonts/firasans-medium-webfont.svg#fira_sansmedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-mediumitalic-webfont.eot');
+    src: url('fonts/firasans-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/firasans-mediumitalic-webfont.woff') format('woff'),
+         url('fonts/firasans-mediumitalic-webfont.ttf') format('truetype'),
+         url('fonts/firasans-mediumitalic-webfont.svg#fira_sansmedium_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-bold-webfont.eot');
+    src: url('fonts/firasans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-bold-webfont.woff2') format('woff2'),
+         url('fonts/firasans-bold-webfont.woff') format('woff'),
+         url('fonts/firasans-bold-webfont.ttf') format('truetype'),
+         url('fonts/firasans-bold-webfont.svg#fira_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/firasans-bolditalic-webfont.eot');
+    src: url('fonts/firasans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/firasans-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/firasans-bolditalic-webfont.woff') format('woff'),
+         url('fonts/firasans-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/firasans-bolditalic-webfont.svg#fira_sansbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
 html {
     font: 16px/26px Lora, Georgia, Times, Times New Roman, serif;
     color: #464646;
@@ -64,10 +176,17 @@ h1, h2 {
 }
 article h1 {
 	font-size: 4rem;
+	line-height: 4rem;
 }
 article h2, article h3, article h4, article h5, article h5, article h6 {
 	margin-top: 30px;
 	margin-bottom: 0;
+}
+.view-news h3 {
+	margin: 0 0 15px 0;
+}
+article h2:first-of-type {
+	margin-top: 0;
 }
 h2 {
 	line-height: 2.8rem;
@@ -87,6 +206,9 @@ h3 a, a h3 {
 	font-size: 1.3rem;
 	line-height: 1.3rem;
 }
+article .view-news h3 {
+	margin-top: 0;
+}
 h4 {
 	font-size: 1.5rem;
 	line-height: 1.5rem;
@@ -99,13 +221,16 @@ h6 {
 	font-size: 1rem;
 	line-height: 1rem;
 }
+p {
+	margin-bottom: 1.2em;
+	line-height: 1.5em;
+}
 
 /* Links */
 a {
 	text-decoration: underline;
 	color: #38a6e8;
 	font-weight: 500;
-	-webkit-transition: all 0.24s ease-in-out;
 	transition: all 0.24s ease-in-out;
 }
 a:hover, a h3:hover, h3 a:hover {
@@ -123,11 +248,11 @@ a.btn, .more-link a {
 	font-size: 1rem;
 	display: inline-block;
 	text-decoration: none;
-	-webkit-transition: all 0.24s ease-in-out;
 	transition: all 0.24s ease-in-out;
 }
 a.btn:hover, .more-link a:hover {
-	background-color: #0275ae;
+	background-color: #1892da;
+	border: 2px solid #0681c9;
 }
 .twitter .tweet a {
 	font-weight: normal;
@@ -164,7 +289,7 @@ nav ul li {
 nav.main  {
     float: right;
     width: 60%;
-    margin-top: 40px;
+    margin-top: 36px;
     clear: right;
 }
 nav.main li {
@@ -172,7 +297,7 @@ nav.main li {
 	padding: 0;
 }
 header nav.main a {
-	border: 1px solid #38a6e8;
+	border: 2px solid #38a6e8;
     text-decoration: none;
     font-weight: 500;
     color: white;
@@ -189,22 +314,22 @@ header nav.main a:hover, header nav.main .active-trail a {
     color: #38a6e8;
     background-color: white;
     border-radius: 5px;
-    border: 1px solid #bde2f8;
-    -webkit-transition: all 0.24s ease-in-out;
+    border: 2px solid #bde2f8;
     transition: all 0.24s ease-in-out;
 }
 nav.main li:first-child a {
     margin-left: 0;
 }
-.header-container nav.main li:last-child a {
+.header-container nav.main li.last a {
     margin-right: 0;
     background-color: #f65151;
     border-radius: 5px;
     border: 2px solid #f43d3d;
-    padding: 7px 22px;
 }
-.header-container nav.main li:last-child a:hover {
+.header-container nav.main li.last a:hover {
 	color: white;
+	background-color: #f42d2d;
+	border: 2px solid #dc1212;
 }
 header nav.social  {
 	display: none;
@@ -213,7 +338,7 @@ nav.social a  {
 	margin: 0 5px;
 	display: inline;
 }
-nav.social li:last-child a {
+nav.social li.last a {
 	margin-right: 0;
 }
 
@@ -222,7 +347,7 @@ nav.social li:last-child a {
 	background-color: #0e75b0;
 	float: left;
 	width: 100%;
-	padding: 100px 0;
+	padding: 25px 0;
 	color: white;
 }
 .footer-container .content {
@@ -279,7 +404,7 @@ nav.social li:last-child a {
     background: none;
     text-decoration: none;
 }
-.footer-container nav.main li:last-child a {
+.footer-container nav.main li.last a {
 	padding-right: 0;
 	padding-top: 0;
 }
@@ -321,16 +446,19 @@ section {
 	text-align: center;
 	margin-bottom: 5px;
 }
-.front section.hero h2 span {
+.front section.hero h2 strong {
 	display: inline;
 	color: #38a6e8;
 	margin: 10px 0;
 	text-transform: uppercase;
 	letter-spacing: -2px;
-	text-shadow: none;
+}
+.front section.hero p {
+	margin: 0;
+	padding: 0;
 }
 .front section.hero form {
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
@@ -349,6 +477,9 @@ section {
 	font-size: 30px;
 	margin-bottom: 15px;
 }
+.front form {
+	display:block;
+}
 .front form ul {
 	margin: 0;
 	padding: 0;
@@ -363,13 +494,37 @@ section {
 	color: #252525;
 	font-weight: 700;
 }
+.front form div {
+	display:inline-block;
+}
 .front form input {
 	padding: 7px 10px;
+	border: solid 1px #cccccc;
 }
-.front form input#zip {
+.front form input#edit-email, .front form input#edit-zip {
+	transition: all 0.2s ease;
+	outline: none;
+}
+.front form input#edit-email:focus, .front form input#edit-zip:focus {
+	box-shadow: 0 0 5px rgba(240,102,27,1);
+	border: 1px solid rgba(240,102,27,1);
+}
+.front form input#edit-email {
+	width:200px;
+}
+.front form input#edit-zip {
 	width: 50px;
 }
-.front form button {
+input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder {
+	color: #c8c8c8;
+}
+.form-item-zip {
+	margin: 0 10px;
+}
+#edit-markup {
+	display:block;
+}
+.front form #edit-submit {
 	background-color: #f68a51;
 	border: 2px solid #ea8149;
 	color: white;
@@ -379,6 +534,11 @@ section {
 	width: 90px;
 	border-radius: 5px;
 	text-align: center;
+	transition: all 0.2s ease;
+}
+.front form #edit-submit:hover {
+	background-color: #f17634;
+	border: 2px solid #f0661b;
 }
 .contact {
 	display: block;
@@ -406,7 +566,7 @@ section.donate ol {
 	padding: 0;
 	display: block;
 	text-align: center;
-	width: 75%;
+	width: 80%;
 }
 section.donate li {
 	background-color: #f65151;
@@ -418,12 +578,18 @@ section.donate li {
 	list-style: none;
 	text-align: center;
 	display: inline-block;
+	transition: all 0.2s ease;
+}
+section.donate li:hover {
+	background-color: #f65151;
+	border: 2px solid #f43d3d;
+	transform: scale(1.07,1.07);
 }
 section.donate a {
 	font-size: 42px;
 	color: white;
 }
-section.donate li::first-letter {
+section.donate li span {
 	font-size: 21px;
 	vertical-align: super;
 	color: #f5d7d7;
@@ -464,14 +630,22 @@ ul.news-list, ul.issues-list {
 	margin: 0 0 15px 0;
 	padding: 0;
 }
+ul.news-list p {
+	margin: 0;
+}
 ul.news-list li, ul.issues-list li {
 	list-style: none;
 	border-bottom: 1px solid #e5e5e5;
-	padding: 30px 0;
+	padding: 10px 0 30px 0;
+	margin-bottom: 15px;
 }
 .front section.feeds aside, section.sub-container aside {
 	width: 100%;
 	margin: 25px 0;
+}
+section.sub-container aside {
+	padding-top: 25px;
+	border-top: 2px solid #9acdec;
 }
 aside .twitter {
 	margin-bottom: 50px;
@@ -512,6 +686,10 @@ aside .support a.btn {
 	background-color: #013e68;
 	border: 2px solid #002e4d;
 }
+aside .support a.btn:hover {
+	background-color: #015691;
+	border: 2px solid #004574;
+}
 section.sub-container article {
 	font-size: 1.1rem;
 }
@@ -527,8 +705,10 @@ section.sub-container article .right {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
-	padding-top: 265px;
+	padding-top: 31%;
 	padding-bottom: 0;
+	height: auto;
+	width: 100%;
 }
 .not-front section.hero h1 {
 	font-style: italic;
@@ -594,7 +774,13 @@ section.sub-container article .right {
 	section.donate li {
 		margin: 0 12px;
 	}
-
+	.not-front section {
+		padding: 25px 0;
+	}
+	.not-front section.hero {
+		padding-top: 265px;
+		max-height: 135px;
+	}
 	/* Footer */
 	.footer-container nav.main li {
 		display: inline;
@@ -613,7 +799,7 @@ section.sub-container article .right {
 	.front section.hero h2 {
 		margin-bottom: 80px;
 	}
-	.front section.hero h2 span {
+	.front section.hero h2 strong {
 		letter-spacing: -2px;
 	}
 	.front section.hero form {
@@ -657,12 +843,25 @@ section.sub-container article .right {
 		clear: right;
 		margin: 0;
 	}
+	.footer-container {
+		padding: 100px 0;
+	}
 	.footer-container nav.main {
 		width: 100%;
 		float: none;
 		clear: none;
 		margin: 0 auto;
 		text-align: center;
+	}
+	.not-front section {
+		padding: 100px 0;
+	}
+	section.donate {
+		padding: 25px 0;
+	}
+	section.sub-container aside {
+		padding-top: 0;
+		border-top: none;
 	}
 }
 
@@ -682,8 +881,9 @@ section.sub-container article .right {
     	line-height: 4.3rem;
     	width: 710px;
     	float: right;
+    	text-align: left;
     }
-    .front section.hero h2 span {
+    .front section.hero h2 strong {
     	display: block;
     	font-size: 6.6rem;
     }
@@ -802,66 +1002,196 @@ section.sub-container article .right {
 	clear: right;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+html.overlay-open #overlay-disable-message {display:none;}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+#user-login input {
+	margin-bottom:10px;
+	border:solid 1px #ccc;
+	padding:10px 10px;
+	font-size:15px;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+#user-login input#edit-submit {
+	background-color:#f65151;
+	color:#ffffff;
+	border:none;
+	cursor:pointer;
+	text-transform:uppercase;
+	transition: all 0.2s ease;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+#user-login input#edit-submit:hover {
+	background-color:#be1e2d;
+}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+.hero .region h2 {
+	display:none;
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
 
-    thead {
-        display: table-header-group;
-    }
+/*    IE8 - 9
+/*--------------------------------------*/
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.lt-ie9 h1, .lt-ie9 h2 {
+	font-size: 36px;
+}
+.lt-ie9 article h1 {
+	font-size: 64px;
+	line-height: 64px;
+}
+.lt-ie9 h2 {
+	line-height: 36.48px;
+}
+.lt-ie9 h3 {
+	font-size: 32px;
+	line-height: 32px;
+}
+.lt-ie9 h3 a, .lt-ie9 a h3 {
+	font-size: 20.8px;
+	line-height: 20.8px;
+}
+.lt-ie9 h4 {
+	font-size: 24px;
+	line-height: 24px;
+}
+.lt-ie9 h5 {
+	font-size: 20.8px;
+	line-height: 20.8px;
+}
+.lt-ie9 h6 {
+	font-size: 16px;
+	line-height: 16px;
+}
+.lt-ie9 a.btn, .lt-ie9 .more-link a {
+	font-size: 16px;
+}
+.lt-ie9 .contact {
+	display: none;
+}
+.lt-ie9 section, .lt-ie9 .not-front section {
+	padding: 100px 0;
+}
+.lt-ie9 .front section.hero {
+	background-position: center top;
+	background-size: cover;
+	height: 465px;
+	padding-top: 35px;
+}
+.lt-ie9 .front section.hero h2 {
+	font-size: 70px;
+	line-height: 70px;
+	width: 710px;
+	float: right;
+	text-align: left;
+	margin-bottom: 80px;
+}
+.lt-ie9 .front section.hero h2 strong {
+	display: block;
+	font-size: 100px;
+	letter-spacing: -2px;
+}
+.lt-ie9 .front section.hero form {
+	margin-right: 180px;
+	border: 1px solid #ccc;
+	display: block;
+}
+.lt-ie9 .front section.hero form li {
+	display: inline-block;
+}
+.lt-ie9 section.donate {
+	padding: 25px 0;
+}
+.lt-ie9 section.donate .content {
+	width: 740px;
+}
+.lt-ie9 section.donate h2 {
+	display: inline-block;
+	text-align: left;
+	margin-right: 20px;
+	font-size: 36px;
+}
+.lt-ie9 section.donate ol {
+	margin: 0;
+	display: inline-block;
+	width: 500px;
+}
+.lt-ie9 section.donate li {
+	margin: 0 10px;
+	padding-top: 20px;
+}
+.lt-ie9 .not-front section.hero {
+	padding-top: 265px;
+	max-height: 135px;
+}
+.lt-ie9 .front section.about {
+	padding-top: 70px;
+}
+.lt-ie9 .front section.about article.content p:first-of-type {
+	text-align: left;
+}
+.lt-ie9 .front section.about article.content img {
+	margin-left: 40px;
+	float: right;
+	width: auto;
+	height: auto;
+}
+.lt-ie9 .front section.feeds .news, .lt-ie9 section.sub-container article {
+	width: 60%;
+	max-width: 600px;
+	float: left;
+	clear: left;
+}
+.lt-ie9 .front section.feeds aside, .lt-ie9 section.sub-container aside {
+	width: 30%;
+	padding: 0px 5% 10px;
+	float: right;
+	clear: right;
+	margin: 0;
+}
+.lt-ie9 section.sub-container aside {
+	padding-top: 0;
+	border-top: none;
+}
+.lt-ie9 header nav.social {
+	display: block;
+}
+.lt-ie9 header nav.main {
+	width: 70%;
+}
+.lt-ie9 header nav.main a {
+	padding: 8px 3.5%;
+}
+.lt-ie9 nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
+.lt-ie9 .footer-container {
+	padding: 100px 0;
+}
+.lt-ie9 .footer-container .details {
+	width: 325px;
+	float: left;
+	clear: left;
+	text-align: left;
+}
+.lt-ie9 .footer-container nav.social {
+	float: right;
+	clear: right;
+	text-align: right;
+}
+.lt-ie9 .footer-container nav.main {
+	width: 650px;
+	float: right;
+	clear: right;
+	margin: 0 auto;
+	text-align: right;
+}
+.lt-ie9 .footer-container nav.main a {
+	padding: 0 2%;
+}
+.lt-ie9 .footer-container nav.main li {
+	display: inline;
 }

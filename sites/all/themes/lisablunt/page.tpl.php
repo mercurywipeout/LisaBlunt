@@ -1,24 +1,4 @@
-<div class="header-container">
-    <header class="clearfix">
-        <a href="/">
-	        <h1>
-	        	<img src="/sites/all/themes/lisablunt/img/logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo" />
-	        	<span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
-	        </h1>
-	    </a>
-        <nav class="social">
-            <?php // print render($page['social_navigation']); ?>
-            <ul>
-                <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
-                <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
-            </ul>
-        </nav>
-        <nav class="main">
-            <?php print render($page['navigation']); ?>
-        </nav>
-    </header>
-</div>
-
+<?php include ('header.tpl.inc'); ?>
 <div class="main-container">
     <div class="main clearfix">
 		<?php if (empty($hero_image)) { } else { ?>
@@ -73,34 +53,13 @@
         	<div class="content">
                 <h2>Donate Now!</h2>
                 <ol>
-                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=05 "><li>$5</li></a>
-                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=10"><li>$10</li></a>
-                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=25"><li>$25</li></a>
-                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=50"><li>$50</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=05 "><li><span>$</span>5</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=10"><li><span>$</span>10</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=25"><li><span>$</span>25</li></a>
+                	<a href="https://secure.actblue.com/contribute/page/lisa-blunt-rochester-for-congress-1?amount=50"><li><span>$</span>50</li></a>
                 </ol>
             </div>
         </section>
     </div>
 </div>
-
-<div class="footer-container">
-    <footer class="content">
-        <div class="details">
-            <h3>
-            	<img src="/sites/all/themes/lisablunt/img/footer-logo.png" alt="Lisa Blunt. Rochester Democrat for Congress" class="logo"/>
-                <span class="visuallyhidden">Lisa Blunt. Rochester Democrat for Congress</span>
-            </h3>
-            <?php print render($page['footer']); ?>
-        </div>
-        <nav class="main">
-            <?php print render($page['footer_navigation']); ?>
-        </nav>
-        <nav class="social">
-        	<?php // print render($page['social_navigation']); ?>
-        	<ul>
-        	    <li class="twitter"><a href="#"><img src="/sites/all/themes/lisablunt/img/twitter-icon.png" alt="Twitter" /></a></li>
-        	    <li class="facebook"><a href="#"><img src="/sites/all/themes/lisablunt/img/facebook-icon.png" alt="Facebook" /></a></li>
-        	</ul>
-        </nav>
-    </footer>
-</div>
+<?php include ('footer.tpl.inc'); ?>
